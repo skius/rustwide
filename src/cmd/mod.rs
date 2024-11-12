@@ -404,7 +404,7 @@ impl<'w, 'pl> Command<'w, 'pl> {
                 .mount(
                     &workspace.cargo_home(),
                     &container_dirs::CARGO_HOME,
-                    MountKind::ReadOnly,
+                    MountKind::ReadWrite,
                 )
                 .mount(
                     &workspace.rustup_home(),
